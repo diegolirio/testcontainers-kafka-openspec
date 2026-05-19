@@ -10,6 +10,7 @@ Projeto Spring Boot com Kotlin demonstrando integração entre **Kafka** e **Pos
 - PostgreSQL (runtime)
 - Testcontainers (Kafka nativo + PostgreSQL)
 - JUnit 5 + `@ServiceConnection`
+- [Awailibity](https://github.com/awaitility/awaitility/wiki/Usage#usage-examples)
 
 ## Estrutura de Testes
 
