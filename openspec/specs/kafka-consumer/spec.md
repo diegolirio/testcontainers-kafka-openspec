@@ -38,3 +38,10 @@ The system SHALL include integration tests that use Testcontainers to verify the
 #### Scenario: End-to-end verification
 - **WHEN** the integration tests publish an order message to Kafka
 - **THEN** the system SHALL verify that a corresponding record exists in the PostgreSQL database
+
+### Requirement: Trigger order notification
+The `OrderConsumer` SHALL trigger a notification to the external world after successfully persisting an order.
+
+#### Scenario: Post-persistence notification
+- **WHEN** an order has been successfully saved to the database
+- **THEN** the system SHALL invoke the order notification mechanism (Kafka producer)
